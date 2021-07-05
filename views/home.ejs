@@ -1,0 +1,39 @@
+<%- include('./partials/header.ejs')%>
+
+<title>Log In</title>
+</head>
+<body>
+
+    <!-- <div class="container"> -->
+       
+          <div class="cards-list">
+<!--             
+                <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div> -->
+                <div class="card_title title-white">
+                        <span>Hello👋</span>
+
+                        <p><%- (username)?username:'' %></p> 
+
+                        <a href="/protected">
+                            <button class="btn btn-primary">
+                                Go to protected page
+                            </button>
+                            </a> 
+                    <div>
+                        <form action="/user/?_method=DELETE" method="POST">
+                            <button class="btn btn-danger" type="submit">Log out</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+             
+    <!-- </div> -->
+
+
+
+
+
+        
+</body>
+</html>
